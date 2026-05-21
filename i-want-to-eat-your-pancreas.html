@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f6f1ee;
+    color:#3b2f2f;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(.9);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to right,
+        rgba(246,241,238,.95) 15%,
+        rgba(255,183,160,.35) 55%,
+        rgba(246,241,238,.95) 100%
+    );
+    z-index:1;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    position:absolute;
+    z-index:2;
+    left:70px;
+    top:50%;
+    transform:translateY(-50%);
+    max-width:650px;
+}
+
+.contenido h1{
+    font-size:60px;
+    margin-bottom:20px;
+    color:#e66a6a;
+}
+
+/* META */
+
+.meta{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    color:#6b4f4f;
+}
+
+.edad{
+    background:#e66a6a;
+    color:white;
+    padding:4px 10px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion{
+    line-height:1.8;
+    color:#4a3a3a;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/* BOTONES */
+
+.botones{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+/* PLAY */
+
+.btn-play{
+    background:linear-gradient(45deg,#e66a6a,#f2a7a7);
+    color:white;
+}
+
+.btn-play:hover{
+    transform:scale(1.05);
+}
+
+/* BACK */
+
+.btn-back{
+    background:#fff;
+    color:#e66a6a;
+    border:2px solid #f2c2c2;
+}
+
+/* EPISODIOS */
+
+.episodios{
+    padding:60px 70px;
+    background:#f3e7e3;
+}
+
+.episodios h2{
+    font-size:40px;
+    margin-bottom:30px;
+    color:#e66a6a;
+}
+
+/* GRID */
+
+.grid{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* CARD */
+
+.card{
+    width:280px;
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 5px 18px rgba(230,106,106,.15);
+    border:1px solid #f2c2c2;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* IMAGEN */
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+/* INFO */
+
+.info{
+    padding:20px;
+}
+
+.info h3{
+    color:#e66a6a;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.info p{
+    color:#5a4545;
+    line-height:1.5;
+    font-size:15px;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<section class="hero">
+
+    <img src="imagenes/iwant1.png">
+
+    <div class="overlay"></div>
+
+    <div class="contenido">
+
+        <h1>I Want to Eat Your Pancreas</h1>
+
+        <div class="meta">
+
+            <span class="edad">13+</span>
+            <span>Sub | Dob</span>
+            <span>Acción</span>
+            <span>Comedia</span>
+            <span>Magia</span>
+
+        </div>
+
+        <p class="descripcion">
+una historia conmovedora sobre la amistad y el amor entre dos jóvenes. Sakura, una chica alegre y extrovertida, sufre de una enfermedad terminal en el páncreas. Haruki, un chico introvertido y solitario, descubre el secreto de Sakura y se convierte en su amigo más cercano. A medida que pasan tiempo juntos, ambos aprenden a apreciar cada momento y a enfrentar la realidad de la enfermedad de Sakura con valentía y esperanza.
+        </p>
+
+        <div class="botones">
+
+            <button class="btn btn-play">
+                ▶ Ver ahora
+            </button>
+
+            <button class="btn btn-back"
+            onclick="window.location.href='mi feliz matrimonio rosa.html'">
+
+                ⬅ Volver
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="episodios">
+
+    <h2>Episodios</h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <img src="imagenes/i want to.jpg">
+
+            <div class="info">
+
+                 <h3>E1 - Un secreto compartido</h3>
+
+                <p>
+                    Haruki descubre el diario de Sakura y su enfermedad.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagenes/i want.webp">
+
+            <div class="info">
+
+               <h3>E2 - Días junto a ella</h3>
+
+                <p>
+                    Ambos comienzan a pasar más tiempo juntos.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagenes/i want2.jfif">
+
+            <div class="info">
+
+                <h3>E3 - El valor del presente</h3>
+
+                <p>
+                    Sakura y Haruki aprenden a disfrutar cada momento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
